@@ -120,7 +120,7 @@ const Projects = () => {
                 summary="A feauture-rich Portfolio Website using React, Tailwind CSS, React Router.
                 It shows detail regarding mySelf."
                 link="/"
-                github="/"
+                github="https://github.com/krupalisavani99/Portfolio-Application"
                 type="Featured Project"
                 img={require("../images/Porfolio-web-banner.png")}
               />

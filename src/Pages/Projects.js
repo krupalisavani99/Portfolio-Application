@@ -15,25 +15,21 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
         className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-purple-600 rounded-br-3xl 
       xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]"
       />
-      <a
-        href="/"
-        className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full"
-      >
+      <div className="w-1/2 overflow-hidden rounded-lg lg:w-full">
         <img src={img} alt={title} className="w-full h-auto" />
-      </a>
+      </div>
       <div className="w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
         <span className="text-purple-600 font-medium text-xl xs:text-base">
           {type}
         </span>
-        <a href={link} className="hover:underline underline-offset-2">
-          <h2 className="my-2 w-full text-left text-4xl font-bold sm:text-sm">
-            {title}
-          </h2>{" "}
-        </a>
+        {/* <a href={link} className="hover:underline underline-offset-2"> */}
+        <h2 className="my-2 w-full text-left text-4xl font-bold sm:text-sm">
+          {title}
+        </h2>{" "}
+        {/* </a> */}
         <p className="my-2 font-medium text-black dark:text-white sm:text-sm">
           {summary}
         </p>
-
         <div className="mt-2 flex items-center">
           <a href={github} className="w-10">
             {" "}
@@ -64,25 +60,21 @@ const Project = ({ title, type, img, link, github }) => {
         className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-purple-600 rounded-br-3xl 
       md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]"
       />
-      <a href="/" className="w-full cursor-pointer overflow-hidden rounded-lg">
-        <img src={img} alt={title} className="w-full h-auto" />
-      </a>
+      <img src={img} alt={title} className="w-full h-auto" />
+
       <div className="w-full flex flex-col items-start justify-between mt-4">
         <span className="text-purple-600 font-medium text-xl lg:text-lg md:text-base">
           {type}
         </span>
-        <a href={link} className="hover:underline underline-offset-2">
-          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">
-            {title}
-          </h2>{" "}
-        </a>
+        <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">
+          {title}
+        </h2>
 
         <div className="w-full mt-2 flex items-center justify-between">
           <a
             href={link}
             className="text-lg font-semibold text-purple-600 underline md:text-base"
           >
-            {" "}
             Visit
           </a>
           <a href={github} className="w-8 md:w-6">
@@ -136,13 +128,13 @@ const Projects = () => {
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
-              {/* <Project
-                title="Weather Application"
-                link="/"
-                github="https://github.com/krupalisavani99/live-weather-app"
+              <Project
+                title="Notebook Application"
+                link="https://notebook-app-9cj3.vercel.app/"
+                github="https://github.com/krupalisavani99/Notebook-app"
                 type=""
-                img={require("../images/Weather-app_cover_img.png")}
-              /> */}
+                img={require("../images/Notebook-app-cover-img.png")}
+              />
             </div>
           </div>
         </Layout>

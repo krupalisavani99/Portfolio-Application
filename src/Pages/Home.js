@@ -47,13 +47,13 @@ const Home = () => {
                 >
                   Resume <LinkArrow className={"w-6 ml-1"} />
                 </a>
-                <Link
+                {/* <Link
                   //   href="mailto:krupalisavani9999@gmail.com"
                   to="/contact"
                   className="ml-4 text-lg font-medium capitalize text-black underline dark:text-white md:text-base"
                 >
                   Contact
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>

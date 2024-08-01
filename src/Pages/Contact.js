@@ -19,7 +19,6 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          debugger;
           if ((result.text = "OK")) {
             Swal.fire({
               title: "Thank You !!",

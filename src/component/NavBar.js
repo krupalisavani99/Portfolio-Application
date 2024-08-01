@@ -27,7 +27,7 @@ const CustomLink = ({ href, title, className = "" }) => {
       {/* ${(className = "active" ? "w-full underline" : "")} */}
       {title}
       <span
-        className={`h-[1px] inline-block w-0 bg-black
+        className={`h-[1px] inline-block w-0 bg-[#9333ea]
       absolute left-0 -bottom-0.5
       group-hover:w-full transition-[width] ease duration-300`}
       >
@@ -42,6 +42,7 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
     <NavLink
       to={href}
       className={`${className} relative group text-white dark:text-black my-2`}
+      onClick={toggle}
     >
       {title}
       <span
@@ -64,7 +65,7 @@ const NavBar = () => {
   return (
     <header className="w-full px-32 py-8 font-medium flex items-center justify-between dark:text-white relative z-10 lg:px-16 md:px-12 sm:px-8">
       <button
-        className=" flex-col justify-center items-center hidden lg:flex"
+        className="fixed flex-col justify-center items-center hidden lg:flex"
         onClick={handleClick}
       >
         <span
@@ -128,7 +129,7 @@ const NavBar = () => {
           initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
           animate={{ scale: 1, opacity: 1 }}
           className="min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-      bg-black/90 dark:bg-white/75 rounded-lg backdrop-blur-md py-32"
+      bg-purple-600 dark:bg-white/75 rounded-lg backdrop-blur-md py-32"
         >
           <nav className="flex items-center flex-col justify-center">
             <CustomMobileLink
@@ -149,12 +150,12 @@ const NavBar = () => {
               className=""
               toggle={handleClick}
             />
-            <CustomMobileLink
+            {/* <CustomMobileLink
               href="/contact"
               title="Contact"
               className=""
               toggle={handleClick}
-            />
+            /> */}
           </nav>
           <nav className="flex items-center justify-center flex-wrap ">
             <motion.a

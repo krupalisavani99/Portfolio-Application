@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import { useScroll, motion } from "framer-motion";
-import LiIcon from "./LiIcon";
 
 import { educationData } from "../constants";
 import DetailList from "./DetailList";
@@ -14,7 +13,7 @@ const Education = () => {
 
   return (
     <div className="mb-[190px]">
-      <h2 className="font-bold text-6xl mb-28 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
+      <h2 className="font-bold text-5xl mb-28 w-full text-center sm:!text-4xl xs:!text-4xl md:mb-16">
         Education
       </h2>
 

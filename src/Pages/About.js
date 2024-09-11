@@ -40,26 +40,6 @@ const About = () => {
                 opportunities to contribute my skills to innovative teams while
                 continuing to develop and refine my craft in web development.
               </p>
-              {/* <p className="font-medium">
-                {" "}
-                Hi, I'm Krupali Savani, a front-end web developer and React
-                developer with a passion for creating beautiful,functional, and
-                user-centered digital experiences. With 1 years of experience in
-                the field. I am always looking for new and innovative ways to
-                bring my clients' visions to life.
-              </p> */}
-              {/* <p className="my-4 font-medium">
-                I believe that design is about more than just making things look
-                pretty – it's about solving problems and creating intuitive,
-                enjoyable experiences for users.
-              </p> */}
-              {/* <p className="my-4 font-medium">
-                Whether I'm working on a website, mobile app, or other digital
-                product, I bring my commitment to work excellence and
-                user-centered thinking to every project I work on. I look
-                forward to the opportunity to bring my skills and passion to
-                your next project.
-              </p> */}
             </div>
             <div
               className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-black 

@@ -12,7 +12,6 @@ const DetailList = ({
   details,
 }) => {
   const ref = useRef(null);
-  console.log("details", details);
   return (
     <li
       ref={ref}

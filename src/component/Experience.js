@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import { useScroll, motion } from "framer-motion";
-import LiIcon from "./LiIcon";
 
 import { experienceData } from "../constants";
 import DetailList from "./DetailList";
@@ -14,11 +13,11 @@ const Experience = () => {
 
   return (
     <div className="mb-[120px]">
-      <h2 className="font-bold text-6xl mb-28 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
+      <h2 className="font-bold text-5xl mb-28 w-full text-center sm:!text-4xl xs:!text-4xl md:mb-16">
         Experience
       </h2>
 
-      <div ref={ref} className="w-[75%] mx-auto relative">
+      <div ref={ref} className="w-[75%] mx-auto relative sm:w-[100%]">
         <motion.div
           style={{ scaleY: scrollYProgress }}
           className="absolute left-9 top-0 w-[4px] h-full bg-black origin-top"

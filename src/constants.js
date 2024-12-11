@@ -21,12 +21,12 @@ export const SKILLS = [
 export const PROJECTS_DATA = [
   {
     type: "Featured Project",
-    title: "Portfolio Website",
+    title: "Anime Search Application",
     summary:
-      "A feature-rich Portfolio Website using React, Tailwind CSS, React Router. It shows detail regarding myself.",
-    img: require("./images/Porfolio-web-banner.png"),
-    link: "/",
-    github: "https://github.com/krupalisavani99/Portfolio-Application",
+      "The Anime Search Application is a feature-rich React-based web app designed to provide an engaging and intuitive anime discovery experience. Styled with Material-UI, the application integrates modern React concepts and React Router for seamless navigation.",
+    img: require("./images/anime-search-app-cover-img.png"),
+    link: "https://anime-search-application-9e5w.vercel.app/",
+    github: "https://github.com/krupalisavani99/Anime-Search-Application",
     featured: true,
   },
   {
@@ -81,7 +81,6 @@ export const experienceData = [
     details: [
       "Worked on UI design and development, gathering requirements and translating them into functional components.",
       "Created a multi-language demo application to showcase localization capabilities and enhance user experience across different languages.",
-      
     ],
   },
 ];
